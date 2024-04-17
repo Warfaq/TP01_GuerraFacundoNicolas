@@ -15,7 +15,7 @@ void setup() {
    posicionElipse.x = diametro/2; //reinicia la linea de circulos
     do{
      fill(random(255), random(255), random(255));
-     ellipse(posicionElipse.x,y1,diametro,diametro);
+     ellipse(posicionElipse.x,y1-diametro/2,diametro,diametro);
      posicionElipse.x += diametro + espacioCirculo; 
     }while (posicionElipse.x+diametro < width);
   }while (y1<=height);
